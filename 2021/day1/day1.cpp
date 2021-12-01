@@ -51,7 +51,7 @@ string getFilename(int argc, char * argv[]) {
 
 int main(int argc, char * argv[]) {
     vector<int> input;
-    string filePath = "./input/input.txt";
+    string filePath = "./data/input.txt";
 
     if (fopen(argv[2], "r") != NULL) {
         filePath = getFilename(argc, argv);
