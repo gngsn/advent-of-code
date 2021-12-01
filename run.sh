@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # echo "     :::     :::::::::  :::     ::: :::::::::: ::::    ::: :::::::::::       ::::::::  ::::::::::       ::::::::   ::::::::  :::::::::  ::::::::::      ::: "
 # echo "   :+: :+:   :+:    :+: :+:     :+: :+:        :+:+:   :+:     :+:          :+:    :+: :+:             :+:    :+: :+:    :+: :+:    :+: :+:             :+: "
@@ -17,32 +18,34 @@ echo '   \\    >>  |||_     //       <<   >> ||   \\,-._// \\_           \\    )
 echo '  (__)  (__)(__)_)   (__)     (__) (__)(_")  (_/(__) (__)         (__)  (__)(_/     (__)(__)    (__)   (__)_) (__) (__)    (__)_) '
 echo "\n\n\n"
 
-while getopts d:f: flag; do
+thisyear=$(date +%Y)
+while getopts d:f:y: flag; do
   case "${flag}" in
     d) day=${OPTARG} ;;
     f) file=${OPTARG} ;;
+    y) year=${OPTARG} ;;
     *) print_usage
        exit 1 ;;
   esac
 done
 
-if [ $day = "" ]
+if [ $day="" ]
 then
-  echo "날짜를 입력하세요!\nEXAMPLE) sh run.sh -d 1"
+  echo "날짜를 입력하세요!\nEXAMPLE) sh run.sh -d 1\n\n"
   exit
-elif [ $file = ""]
-then
-  file="input.txt"
 fi
 
-year=$(date +%Y)
+# default 값 지정
+file=${file:="input.txt"}
+year=${year:=$(date +%Y)}
+
 dir="`pwd -P`/$year/day$day"
 cpp="$dir/day$day.cpp"
 input="$dir/data/$file"
 
 if ! [ -d $dir ]
 then
-  echo "해당하는 날짜가 없습니다 🥲\n"
+  echo "해당하는 디렉터리가 없습니다 🥲\n"
   exit
 fi
 
