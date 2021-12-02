@@ -14,7 +14,7 @@ void tokenize(string const &str, const char delim, vector<string> &out)  {
     string s; 
     while (getline(ss, s, delim)) { 
         out.push_back(s); 
-    } 
+    }
 }
 
 void part1(vector<string> input) {
@@ -68,7 +68,7 @@ void part2(vector<string> input) {
     int answer = horizon * depth;
     cout << ":: part2 answer is " << answer << endl;
 }
- 
+
 string getFilename(int argc, char * argv[]) {
     for (int i = 1; i < argc; i++) {  
         if (i + 1 != argc) { 
@@ -97,10 +97,8 @@ int main(int argc, char * argv[]) {
         file.close();
     }
 
-    cout << "| 2021 Advent of Code DAY 1 | " << endl;
     part1(input);
     part2(input);
-    cout << endl;
    
     return 0;
 }
