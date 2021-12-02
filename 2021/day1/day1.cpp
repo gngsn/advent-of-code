@@ -11,7 +11,6 @@
 #include <climits>
 #include <cstring>
 #include <unistd.h>
-// #include "aoc_day.h"
 
 using namespace std;
 
@@ -19,7 +18,7 @@ void part1(vector<int> input) {
     int answer = 0;
     
      for (int i = 1; i < input.size(); i++) {
-         if (input[i] > input[i-1]) answer++;
+        if (input[i] > input[i-1]) answer++;
      }
      
      cout << ":: part1 answer is " << answer << endl;
@@ -30,7 +29,7 @@ void part2(vector<int> input) {
     int answer = 0;
     int prev = INT_MAX;
 
-    for (int i = 0; i < input.size(); i++) {
+    for (int i = 0; i < input.size()-2; i++) {
         if (input[i] + input[i+1] + input[i+2] > prev) answer++;
         prev = input[i] + input[i+1] + input[i+2];
     }
@@ -66,10 +65,8 @@ int main(int argc, char * argv[]) {
         file.close();
     }
 
-    cout << "| 2021 Advent of Code DAY 1 | " << endl;
     part1(input);
     part2(input);
-    cout << endl;
    
     return 0;
 }
