@@ -18,18 +18,18 @@ echo '   \\    >>  |||_     //       <<   >> ||   \\,-._// \\_           \\    )
 echo '  (__)  (__)(__)_)   (__)     (__) (__)(_")  (_/(__) (__)         (__)  (__)(_/     (__)(__)    (__)   (__)_) (__) (__)    (__)_) '
 echo "\n\n\n"
 
-thisyear=$(date +%Y)
-while getopts d:f:y: flag; do
+while getopts d:f:y:e: flag; do
   case "${flag}" in
     d) day=${OPTARG} ;;
     f) file=${OPTARG} ;;
     y) year=${OPTARG} ;;
+    e) ext=${OPTARG} ;;
     *) print_usage
-       exit 1 ;;
+      exit 1 ;;
   esac
 done
 
-if [ $day="" ]
+if [ -z $day ]
 then
   echo "날짜를 입력하세요!\nEXAMPLE) sh run.sh -d 1\n\n"
   exit
@@ -38,24 +38,38 @@ fi
 # default 값 지정
 file=${file:="input.txt"}
 year=${year:=$(date +%Y)}
+ext=${ext:="cpp"}
 
 dir="`pwd -P`/$year/day$day"
-cpp="$dir/day$day.cpp"
+source="$dir/day$day.$ext"
 input="$dir/data/$file"
 
-if ! [ -d $dir ]
-then
+if ! [ -d $dir ]; then
   echo "해당하는 디렉터리가 없습니다 🥲\n"
   exit
 fi
 
-cp $cpp ./aoc.cpp
-if ! [ -d build/ ]
-then
+if ! [ -f $source ]; then
+  echo "해당하는 파일이 없습니다 🥲\n"
+  exit
+fi
+
+if ! [ -d build/ ]; then
   mkdir build/
 fi
 
-`make`
-build/aoc.o -f $input
+cp $source ./aoc.$ext
 
-`make clean`
+if [ $ext = "go" ]; then
+  go build -o build/aoc aoc.go
+  ./build/aoc -f $input
+  rm aoc.go
+
+else
+  `make`
+  build/aoc.o -f $input
+
+  `make clean`
+fi
+
+rm -rf build/
