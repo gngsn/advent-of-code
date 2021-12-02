@@ -35,6 +35,7 @@ The first order of business is to figure out how quickly the depth increases, ju
 
 To do this, count the number of times a depth measurement increases from the previous measurement. (There is no measurement before the first measurement.) In the example above, the changes are as follows:
 
+```
 199 (N/A - no previous measurement)
 200 (increased)
 208 (increased)
@@ -45,6 +46,8 @@ To do this, count the number of times a depth measurement increases from the pre
 269 (increased)
 260 (decreased)
 263 (increased)
+```
+
 In this example, there are 7 measurements that are larger than the previous measurement.
 
 How many measurements are larger than the previous measurement?
