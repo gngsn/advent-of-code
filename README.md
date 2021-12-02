@@ -24,11 +24,12 @@ $ sh run.sh -d <day> [-f <input-file> -y <year>]
 
 |flags|description| note |
 | --- | ----- | ---|
-| -d | 실행할 날짜(day) 입력 | *Not Null* |
-| -f | input file 입력 | *default: input.txt* |
-| -y | 실행할 연도(year) 입력 | *default: 실행 연도(현재 연도)* |
+| -d | *day.* 실행할 날짜(day) 입력 | *Not Null* |
+| -f | *filename.* input file 입력 | *default: input.txt* |
+| -y | *year.* 실행할 연도(year) 입력 | *default: 실행 연도(현재 연도)* |
+| -e | *ext.* 실행할 언어 확장자 입력 | *default: cpp* |
 
-* input file 은 실행하고자 하는 `/<year>/<day>/data/` 디렉터리 내에 존재해야 합니다.
+* input file 을 지정할 시에는 실행하고자 하는 `<year>/<day>/data/` 디렉터리 내에 존재해야 합니다.
 
 <br/>
 
@@ -50,6 +51,11 @@ $ sh run.sh -d <day> [-f <input-file> -y <year>]
 
 <img width="1081" alt="스크린샷 2021-12-02 오전 12 14 04" src="https://user-images.githubusercontent.com/43839834/144260651-20c2327d-99d1-4361-a488-60b407a134aa.png">
 
+<br/>
+
+#### CASE #4 ) 없는 날짜(파일)에 접근
+
+<img width="1081" alt="스크린샷 2021-12-02 오후 3 44 18" src="https://user-images.githubusercontent.com/43839834/144371552-ef844ac2-5002-4b31-bdb6-9a09895e32f8.png">
 
 <br/><br/>
 
