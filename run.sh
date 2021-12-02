@@ -60,6 +60,8 @@ fi
 
 cp $source ./aoc.$ext
 
+echo "| $year Advent of Code DAY $day |\n"
+
 if [ $ext = "go" ]; then
   go build -o build/aoc aoc.go
   ./build/aoc -f $input
@@ -71,5 +73,7 @@ else
 
   `make clean`
 fi
+
+echo "\n"
 
 rm -rf build/
