@@ -15,7 +15,7 @@
 ## How to Run
 
 ``` bash
-$ sh run.sh -d <day> [-f <input-file> -y <year>]
+$ sh run.sh -d <day> [-f <input-file> -y <year> -e <extension>]
 ```
 
 <br/>
