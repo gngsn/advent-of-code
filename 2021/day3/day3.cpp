@@ -98,7 +98,7 @@ void part2(vector<string> input) {
 
 int main(int argc, char * argv[]) {
     vector<string> input;
-    string filePath = "/Users/gyeongseon/Git/Algorithm/test/test/input.txt";
+    string filePath = "./data/input.txt";
 
     if (fopen(argv[2], "r") != NULL) {
         filePath = getFilename(argc, argv);
