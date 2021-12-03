@@ -62,3 +62,9 @@ $ sh run.sh -d <day> [-f <input-file> -y <year> -e <extension>]
 참고로,,,터미널의 저 귀여운 로고는 [여기](https://patorjk.com/software/taag/#p=display&c=bash&f=Dancing%20Font&t=Advent%20of%20Code%20!) 에서 골랐습니다,, 내년에는 귀여운 거 말고 멋진 걸로 해볼까요 ~.~
 
 <br/><br/>
+
+<a href="https://hits.seeyoufarm.com">
+<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgngsn%2Fadvent-of-code&count_bg=%23F95656&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+</a>
+
+<br/><br/>
