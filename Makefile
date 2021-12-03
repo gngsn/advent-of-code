@@ -1,7 +1,8 @@
-CPPFLAGS=-Iinclude
+CPP     = g++
+CPPFLAGS=-Iinclude --std=c++11
 
 build/aoc: 
-	g++ ${CPPFLAGS} -o build/aoc.o aoc.cpp
+	${CPP} ${CPPFLAGS} -o build/aoc.o aoc.cpp
 
 clean: 
 	rm -f aoc.cpp \
