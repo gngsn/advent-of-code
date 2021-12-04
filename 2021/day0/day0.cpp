@@ -20,9 +20,15 @@ string getFilename(int argc, char * argv[]) {
     return "";
 }
 
-void part1(vector<string> input) {}
+void part1(vector<string> input) {
+    int answer;
+    cout << ":: part1 answer is " << answer << endl;
+}
 
-void part2(vector<string> input) {}
+void part2(vector<string> input) {
+    int answer;
+    cout << ":: part2 answer is " << answer << endl;
+}
 
 int main(int argc, char * argv[]) {
     vector<string> input;
