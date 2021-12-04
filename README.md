@@ -12,6 +12,22 @@
 
 <br/>
 
+<details>
+<summary>Complete!</summary>
+
+**2021**
+
+| day | done | language |
+| --- | ----- | ---|
+| 1 | ✔️ | cpp, go |
+| 2 | ✔️ | cpp |
+| 3 | ✔️ | cpp |
+| 4 | ✔️ | cpp |
+
+</details>
+
+<br/><br/>
+
 ## How to Run
 
 ``` bash
