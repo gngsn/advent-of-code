@@ -1,10 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 #include <vector>
-#include <climits>
-#include <cstring>
-#include <unistd.h>
-#include <sstream> 
  
 using namespace std;
 
@@ -21,12 +18,12 @@ string getFilename(int argc, char * argv[]) {
 }
 
 void part1(vector<string> input) {
-    int answer;
+    int answer=0;
     cout << ":: part1 answer is " << answer << endl;
 }
 
 void part2(vector<string> input) {
-    int answer;
+    int answer=0;
     cout << ":: part2 answer is " << answer << endl;
 }
 
@@ -41,7 +38,7 @@ int main(int argc, char * argv[]) {
     ifstream file(filePath);
     if(file.is_open()){
         string line;
-        while(getline(file, line)){
+        while(getline(file, line, ',')){
             input.push_back(line);
         }
         file.close();
