@@ -4,19 +4,19 @@
 
 <h2>--- Day 6: Lanternfish ---</h2>
 <p>The sea floor is getting steeper. Maybe the sleigh keys got carried this way?</p>
-<p>A massive school of glowing <a href="https://en.wikipedia.org/wiki/Lanternfish" target="_blank">lanternfish</a> swims past. They must spawn quickly to reach such large numbers - maybe <em>exponentially</em> quickly? You should model their growth rate to be sure.</p>
-<p>Although you know nothing about this specific species of lanternfish, you make some guesses about their attributes. Surely, <span title="I heard you like lanternfish.">each lanternfish creates a new lanternfish</span> once every <em>7</em> days.</p>
-<p>However, this process isn't necessarily synchronized between every lanternfish - one lanternfish might have 2 days left until it creates another lanternfish, while another might have 4. So, you can model each fish as a single number that represents <em>the number of days until it creates a new lanternfish</em>.</p>
-<p>Furthermore, you reason, a <em>new</em> lanternfish would surely need slightly longer before it's capable of producing more lanternfish: two more days for its first cycle.</p>
+<p>A massive school of glowing <a href="https://en.wikipedia.org/wiki/Lanternfish" target="_blank">lanternfish</a> swims past. They must spawn quickly to reach such large numbers - maybe <b>exponentially</b> quickly? You should model their growth rate to be sure.</p>
+<p>Although you know nothing about this specific species of lanternfish, you make some guesses about their attributes. Surely, <span title="I heard you like lanternfish.">each lanternfish creates a new lanternfish</span> once every <b>7</b> days.</p>
+<p>However, this process isn't necessarily synchronized between every lanternfish - one lanternfish might have 2 days left until it creates another lanternfish, while another might have 4. So, you can model each fish as a single number that represents <b>the number of days until it creates a new lanternfish</b>.</p>
+<p>Furthermore, you reason, a <b>new</b> lanternfish would surely need slightly longer before it's capable of producing more lanternfish: two more days for its first cycle.</p>
 <p>So, suppose you have a lanternfish with an internal timer value of <code>3</code>:</p>
 <ul>
 <li>After one day, its internal timer would become <code>2</code>.</li>
 <li>After another day, its internal timer would become <code>1</code>.</li>
 <li>After another day, its internal timer would become <code>0</code>.</li>
-<li>After another day, its internal timer would reset to <code>6</code>, and it would create a <em>new</em> lanternfish with an internal timer of <code>8</code>.</li>
+<li>After another day, its internal timer would reset to <code>6</code>, and it would create a <b>new</b> lanternfish with an internal timer of <code>8</code>.</li>
 <li>After another day, the first lanternfish would have an internal timer of <code>5</code>, and the second lanternfish would have an internal timer of <code>7</code>.</li>
 </ul>
-<p>A lanternfish that creates a new fish resets its timer to <code>6</code>, <em>not <code>7</code></em> (because <code>0</code> is included as a valid timer value). The new lanternfish starts with an internal timer of <code>8</code> and does not start counting down until the next day.</p>
+<p>A lanternfish that creates a new fish resets its timer to <code>6</code>, <b>not <code>7</code></b> (because <code>0</code> is included as a valid timer value). The new lanternfish starts with an internal timer of <code>8</code> and does not start counting down until the next day.</p>
 <p>Realizing what you're trying to do, the submarine automatically produces a list of the ages of several hundred nearby lanternfish (your puzzle input). For example, suppose you were given the following list:</p>
 <pre><code>3,4,3,1,2</code></pre>
 <p>This list means that the first fish has an internal timer of <code>3</code>, the second fish has an internal timer of <code>4</code>, and so on until the fifth fish, which has an internal timer of <code>2</code>. Simulating these fish over several days would proceed as follows:</p>
@@ -41,8 +41,8 @@ After 17 days: 0,1,0,5,6,0,1,2,2,3,0,1,2,2,2,3,3,4,4,5,7,8
 After 18 days: 6,0,6,4,5,6,0,1,1,2,6,0,1,1,1,2,2,3,3,4,6,7,8,8,8,8
 </code></pre>
 <p>Each day, a <code>0</code> becomes a <code>6</code> and adds a new <code>8</code> to the end of the list, while each other number decreases by 1 if it was present at the start of the day.</p>
-<p>In this example, after 18 days, there are a total of <code>26</code> fish. After 80 days, there would be a total of <code><em>5934</em></code>.</p>
-<p>Find a way to simulate lanternfish. <em>How many lanternfish would there be after 80 days?</em></p>
+<p>In this example, after 18 days, there are a total of <code>26</code> fish. After 80 days, there would be a total of <code><b>5934</b></code>.</p>
+<p>Find a way to simulate lanternfish. <b>How many lanternfish would there be after 80 days?</b></p>
 
 <br/>
 Your puzzle answer was `	`.
@@ -52,8 +52,8 @@ Your puzzle answer was `	`.
 <h2 id="part2">--- Part Two ---</h2>
 
 <p>Suppose the lanternfish live forever and have unlimited food and space. Would they take over the entire ocean?</p>
-<p>After 256 days in the example above, there would be a total of <code><em>26984457539</em></code> lanternfish!</p>
-<p><em>How many lanternfish would there be after 256 days?</em></p>
+<p>After 256 days in the example above, there would be a total of <code><b>26984457539</b></code> lanternfish!</p>
+<p><b>How many lanternfish would there be after 256 days?</b></p>
 
 Your puzzle answer was `	`.
 
