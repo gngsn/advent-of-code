@@ -17,15 +17,16 @@
 
 **2021**
 
-| day | done | language |
-| --- | ----- | ---|
-| 1 | ✔️ | cpp, go |
-| 2 | ✔️ | cpp |
-| 3 | ✔️ | cpp |
-| 4 | ✔️ | cpp |
-| 5 | ✔️ | cpp |
-| 6 | ✔️ | cpp |
-| 7 | ✔️ | cpp |
+| day | done | language | note | 
+| --- | ----- | --- | --- |
+| 1 | ✔️ | cpp, go | 증가하는 숫자 세기 |
+| 2 | ✔️ | cpp | 위 아래 왼쪽 오른쪽 ~ 이동 거리 구하기 |
+| 3 | ✔️ | cpp | 각 라인의 0, 1을 세어서 gamma와 epsilon 비율 구하기 |
+| 4 | ✔️ | cpp | 대왕 오징어랑 Bingo ~ 이기고 지고 ~ |
+| 5 | ✔️ | cpp | 2번 이상 겹치는 위험 지역을 세는 문제 |
+| 6 | ✔️ | cpp | 너무 어려웠다.. n day 동안 증가한 lanternfish 개체 수 세기. accumulate로 해결 |
+| 7 | ✔️ | cpp | 연료를 최소화하는 수평선 맞추기. 프로그래머스 '지형편집' 참고함 |
+| 8 | ✔️ | cpp | <a href="https://en.wikipedia.org/wiki/Seven-segment_display" target="_blank">seven-segment displays</a> 문제! bitset으로 해결 |
 
 </details>
 
