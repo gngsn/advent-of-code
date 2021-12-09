@@ -27,6 +27,7 @@
 | 6 | ✔️ | cpp | 너무 어려웠다.. n day 동안 증가한 lanternfish 개체 수 세기. accumulate로 해결 |
 | 7 | ✔️ | cpp | 연료를 최소화하는 수평선 맞추기. 프로그래머스 '지형편집' 참고함 |
 | 8 | ✔️ | cpp | <a href="https://en.wikipedia.org/wiki/Seven-segment_display" target="_blank">seven-segment displays</a> 문제! bitset으로 해결 |
+| 9 | ✔️ | cpp | 가장 낮은 영역을 찾는 문제와 9로 둘러싼 범위를 찾는 문제. 재귀로 해결 |
 
 </details>
 
