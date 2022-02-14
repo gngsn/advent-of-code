@@ -37,6 +37,9 @@ dir="`pwd -P`/$year/day$day"
 source="$dir/day$day.$ext"
 input="$dir/data/$file"
 
+echo $source
+# echo $source
+
 if ! [ -d $dir ]; then
   echo "해당하는 디렉터리가 없습니다 🥲\n"
   exit
@@ -59,6 +62,10 @@ if [ $ext = "go" ]; then
   go build -o build/aoc aoc.go
   ./build/aoc -f $input
   rm aoc.go
+  
+elif [ $ext = "java" ]; then
+  java aoc.java
+  rm aoc.java
 
 else
   `make`
