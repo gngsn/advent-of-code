@@ -15,6 +15,13 @@
 <details>
 <summary>Complete!</summary>
 
+**2022**
+
+| day | done | language | note | 
+| --- | ----- | --- | --- |
+| 1 | ✔️ | kotlin | 가장 높은 칼로리 계산 |
+
+
 **2021**
 
 | day | done | language | note | 
