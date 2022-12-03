@@ -17,9 +17,12 @@
 
 **2022**
 
-| day | done | language | note | 
-| --- | ----- | --- | --- |
-| 1 | ✔️ | kotlin | 가장 높은 칼로리 계산 |
+| day | done | language | note |
+| --- | ---- | ------- | ---- |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day1" target="_blank">day1</a> | ✔️ | kotlin | 가장 높은 칼로리 계산 |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day2" target="_blank">day2</a> | ✔️ | kotlin | 엘프의 가위바위보 게임 |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day3" target="_blank">day2</a> | ✔️ | kotlin | 엘프의 가위바위보 게임 |
+
 
 
 **2021**
