@@ -29,3 +29,4 @@ fun main(args: Array<String>) {
 }
 
 private fun Char.toElfDigit(): Int = if (this >= 'a') this-'a'+ 1 else this-'A' + 27
+
