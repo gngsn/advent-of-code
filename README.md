@@ -12,20 +12,18 @@
 
 <br/>
 
-<details>
-<summary>Complete!</summary>
+## 2022
 
-**2022**
-
-| day | done | language | note |
-| --- | ---- | ------- | ---- |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day1" target="_blank">day1</a> | ✔️ | kotlin | 가장 높은 칼로리 계산 |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day2" target="_blank">day2</a> | ✔️ | kotlin | 가위바위보 게임 |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day3" target="_blank">day3</a> | ✔️ | kotlin | 가방 분할 |
+| day                                                                                                              | done | language | note                 |
+|------------------------------------------------------------------------------------------------------------------| ---- | ------- |----------------------|
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day1" target="_blank">day1</a> | ✔️ | kotlin | 가장 높은 칼로리 계산         |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day2" target="_blank">day2</a> | ✔️ | kotlin | 가위바위보 게임             |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day3" target="_blank">day3</a> | ✔️ | kotlin | 가방 분할                |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day4" target="_blank">day4</a> | ✔️ | kotlin | 효율적인 방 청소: 겹치는 구간 검증 |
 
 
 
-**2021**
+## 2021
 
 | day | done | language | note | 
 | --- | ----- | --- | --- |
@@ -39,11 +37,10 @@
 | 8 | ✔️ | cpp | <a href="https://en.wikipedia.org/wiki/Seven-segment_display" target="_blank">seven-segment displays</a> 문제! bitset으로 해결 |
 | 9 | ✔️ | cpp | 가장 낮은 영역을 찾는 문제와 9로 둘러싼 범위를 찾는 문제. 재귀로 해결 |
 
-</details>
 
-<br/><br/>
+<br/>
 
-## How to Run
+#### How to Run
 
 ``` bash
 $ sh run.sh -d <day> [-f <input-file> -y <year> -e <extension>]
