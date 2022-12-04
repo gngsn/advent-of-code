@@ -14,18 +14,18 @@ fun main(args: Array<String>) {
 
             if (list.size != 3) return@doOnNext
 
-            val str = list.reduce { s1, s2 ->
+            total.getAndAdd(list.reduce { s1, s2 ->
                 s1.chars().distinct()
                     .mapToObj(Int::toChar)
                     .filter { s -> s2.contains(s) }
                     .collect(Collectors.toList())
                     .joinToString("")
-            }
+            }.first().toElfDigit())
 
-            total.getAndAdd(if (str[0] >= 'a') str[0] - 'a' + 1 else str[0] - 'A' + 27)
             list = mutableListOf()
         }.subscribe()
 
     println("TOTAL: $total")
 }
 
+private fun Char.toElfDigit(): Int = if (this >= 'a') this-'a'+ 1 else this-'A' + 27
