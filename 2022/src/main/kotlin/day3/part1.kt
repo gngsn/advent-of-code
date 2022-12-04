@@ -16,3 +16,4 @@ fun main(args: Array<String>) {
         .reduce { x, y -> x + y}
         .subscribe {x -> println("TOTAL: $x")}
 }
+
