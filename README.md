@@ -20,6 +20,7 @@
 | <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day2" target="_blank">day2</a> | ✔️ | kotlin | 가위바위보 게임             |
 | <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day3" target="_blank">day3</a> | ✔️ | kotlin | 가방 분할                |
 | <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day4" target="_blank">day4</a> | ✔️ | kotlin | 효율적인 방 청소: 겹치는 구간 검증 |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day5" target="_blank">day5</a> | ✔️ | kotlin | 크레인 짐 옮기기            |
 
 
 
