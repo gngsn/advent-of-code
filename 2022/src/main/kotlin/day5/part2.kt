@@ -33,7 +33,7 @@ fun main(args: Array<String>) {
             val move: String? = queueMap[from]?.slice(0 until num)
 
             queueMap.put(from, queueMap[from]!!.substring(num))
-            queueMap[to] = move!!.reversed().plus(queueMap[to]!!)
+            queueMap[to] = move!!.plus(queueMap[to]!!)
 
         }.subscribe()
 
