@@ -1,17 +1,19 @@
 package com.gngsn.year2022.day6
 
 import com.gngsn.year2022.readFile
-import java.util.concurrent.atomic.AtomicBoolean
+import reactor.core.publisher.Flux
 
 fun main(args: Array<String>) {
     readFile("src/main/kotlin/day6/input.txt")
-        .doOnNext { line ->
-            var WINDOW_SIZE = 4
-            var i = 0;
-
-            while(++i < line.length)
-                if (line.slice(i until i+4).toList().distinct().size == 4) break;
-
-            println("answer i: ${i+4}")
-        }.subscribe()
+        .subscribe { line ->
+            println("answer: ${howManyMessageSkipped(line, 4)}")
+        }
 }
+
+fun howManyMessageSkipped(line: String, size: Int): Int? {
+    return Flux.range(0, line.length)
+        .filter { i ->
+            line.slice(i until i + size).toList().distinct().size == size
+        }.blockFirst()?.plus(size)
+}
+
