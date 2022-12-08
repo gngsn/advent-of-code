@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
                 return@doOnNext
             }
 
-            val child = if (line[0] == "dir") Directory(line[1], pwd) else File(line[1], pwd, line[0].toLong())
+            val child: File = if (line[0] == "dir") Directory(line[1], pwd) else File(line[1], pwd, line[0].toLong())
             pwd?.addChild(child)
 
         }.subscribe()
@@ -59,61 +59,15 @@ TOTAL: 95437
 
  */
 
+fun Directory.sumAtMost(atMost: Int = 100000): Long {
+
+    return children.filterIsInstance<Directory>().map { ch ->
+        val sz = ch.getFileSize()
+        ch.sumAtMost() + if (sz < atMost) sz else 0
+    }.sum()
+}
+
 private fun String.isCommand() = this == "$"
 
-class Directory(
-    override val name: String,
-    parent: Directory?,
-    var children: MutableList<File> = mutableListOf()
-) : File(name, parent) {
-
-    fun addChild(file: File) {
-        this.children.add(file)
-    }
-
-
-    fun sumAtMost(atMost: Int = 100000): Long {
-        return children.filterIsInstance<Directory>().map { ch ->
-            val sz = ch.getFileSize()
-            ch.sumAtMost() + if (sz < atMost) sz else 0
-        }.sum()
-    }
-
-    override fun print(dept: Int): String {
-        var structure = "$this\n"
-        children.forEach { ch -> structure += "\t".repeat(dept) + "  - " + ch.print(dept + 1) }
-
-        return structure
-    }
-
-
-    override fun getFileSize(): Long {
-        var dirSize: Long = 0
-        this.children.forEach { c -> dirSize += c.getFileSize() }
-
-        return dirSize
-    }
-
-    override fun toString(): String {
-        return "Directory(name=$name, size=${this.getFileSize()})"
-    }
-}
-
-open class File(
-    open val name: String,
-    val parent: Directory?,
-    var size: Long = 0
-) {
-
-    open fun print(dept: Int = 0): String {
-        return "$this\n"
-    }
-
-    override fun toString(): String {
-        return "File(name=$name, size=${this.getFileSize()})"
-    }
-
-    open fun getFileSize(): Long = this.size
-}
 
 
