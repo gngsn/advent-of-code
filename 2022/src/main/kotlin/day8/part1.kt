@@ -2,8 +2,9 @@ package com.gngsn.year2022.day8
 
 import com.gngsn.year2022.readFile
 
+
 fun main() {
-    val grid = readFile("src/main/kotlin/day8/input.txt").collectList().block() as List<String>;
+    val grid = readFile("src/main/kotlin/day8/input.txt").collectList().block() as List<String>
 
     var y = grid.size - 2
     var count = 0
@@ -14,8 +15,7 @@ fun main() {
 
         while (x > 0) {
             if (x == grid[y].length) continue
-            count += if (isVisible(grid, x, y)) 1 else 0
-            x--
+            count += if (isVisible(grid, x--, y)) 1 else 0
         }
         y--
     }
@@ -40,3 +40,5 @@ fun isVisibleCol(grid: List<String>, x: Int, y: Int, add: Int, dept: Int = 1): B
     if (grid[y][x] <= grid[cy][x]) return true
     return isVisibleCol(grid, x, y, add, dept + 1)
 }
+
+
