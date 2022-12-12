@@ -1,10 +1,8 @@
 package com.gngsn.year2022.day9
 
 import com.gngsn.year2022.readFile
-import kotlin.math.abs
 import kotlin.math.pow
 import kotlin.math.sqrt
-
 
 fun main() {
     val trace = mutableSetOf<Pair<Int, Int>>()
@@ -54,16 +52,3 @@ private fun move(pos: Pair<Int, Int>, dir: String): Pair<Int, Int> =
         "L" -> Pair(pos.first - 1, pos.second)
         else -> throw IllegalArgumentException("Not supported command")
     }
-
-
-fun move2(from: Pair<Int, Int>, to: Pair<Int, Int>): MutableSet<Pair<Int, Int>> {
-    val track = mutableSetOf<Pair<Int, Int>>()
-    println("move from{x=${from.first}, y=${from.second}}, to{x=${to.first}, y=${to.second}}")
-    val xweight = if (to.first < 0) -1 else 1
-    val yweight = if (to.second < 0) -1 else 1
-
-    (0 until abs(from.first - to.first)).forEach { i -> track.add(Pair(from.first + (i * xweight) + 1, from.second)) }
-    (0 until abs(from.second - to.second)).forEach { i -> track.add(Pair(from.first, from.second + (i * yweight) + 1)) }
-
-    return track
-}
