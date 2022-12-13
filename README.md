@@ -14,17 +14,18 @@
 
 ## 2022
 
-| day                                                                                                              | done | language | note                                   |
-|------------------------------------------------------------------------------------------------------------------| ---- | ------- |----------------------------------------|
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day1" target="_blank">day1</a> | ✔️ | kotlin | 가장 높은 칼로리 계산                           |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day2" target="_blank">day2</a> | ✔️ | kotlin | 가위바위보 게임                               |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day3" target="_blank">day3</a> | ✔️ | kotlin | 가방 분할                                  |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day4" target="_blank">day4</a> | ✔️ | kotlin | 효율적인 방 청소: 겹치는 구간 검증                   |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day5" target="_blank">day5</a> | ✔️ | kotlin | 크레인 짐 옮기기                              |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day6" target="_blank">day6</a> | ✔️ | kotlin | 첫 패킷을 찾기 위한 넘긴 문자 개수                   |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day7" target="_blank">day7</a> | ✔️ | kotlin | 파일 시스템 크기 계산 (Hard)                    |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day8" target="_blank">day8</a> | ✔️ | kotlin | Tree House의 visible/invisible          |
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day9" target="_blank">day9</a> | ✔️ | kotlin | Up/Down/Right/Left Head 따라 움직이기 (Hard) |
+| day                                                                                                                | done | language | note                                                        |
+|--------------------------------------------------------------------------------------------------------------------| ---- | ------- |-------------------------------------------------------------|
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day1" target="_blank">day1</a>   | ✔️ | kotlin | 가장 높은 칼로리 계산                                                |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day2" target="_blank">day2</a>   | ✔️ | kotlin | 가위바위보 게임                                                    |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day3" target="_blank">day3</a>   | ✔️ | kotlin | 가방 분할                                                       |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day4" target="_blank">day4</a>   | ✔️ | kotlin | 효율적인 방 청소: 겹치는 구간 검증                                        |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day5" target="_blank">day5</a>   | ✔️ | kotlin | 크레인 짐 옮기기                                                   |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day6" target="_blank">day6</a>   | ✔️ | kotlin | 첫 패킷을 찾기 위한 넘긴 문자 개수                                        |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day7" target="_blank">day7</a>   | ✔️ | kotlin | 파일 시스템 크기 계산 (Hard)                                         |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day8" target="_blank">day8</a>   | ✔️ | kotlin | Tree House의 visible/invisible                               |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day9" target="_blank">day9</a>   | ✔️ | kotlin | Up/Down/Right/Left Head 따라 움직이기 (Hard)                      |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2022/src/main/kotlin/day10" target="_blank">day10</a> | ✔️ | kotlin | Cathode-Ray Tube: control sign through addx/noop cmd (Hard) |
 
 
 
