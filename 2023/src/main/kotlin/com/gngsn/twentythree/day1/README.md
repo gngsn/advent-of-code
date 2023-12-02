@@ -60,3 +60,5 @@ produces `281`.
 
 What is the sum of all of the calibration values?
 
+I was thinking why I don't like cheesy
+since today it makes me think why I don't like cheesy
