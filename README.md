@@ -15,9 +15,9 @@
 
 ## 2023
 
-| day                                                                                                              | done | language | note |
-|------------------------------------------------------------------------------------------------------------------|------|----------|------|
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2023/src/main/kotlin/day1" target="_blank">day1</a> |      | kotlin   | -    |
+| day                                                                                                                                    | done | language | note |
+|----------------------------------------------------------------------------------------------------------------------------------------|------|----------|------|
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2023/src/main/kotlin/com/gngsn/twentythree/day1" target="_blank">day1</a> |      | kotlin   | -    |
 
 <br/>
 
