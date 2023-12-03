@@ -1,6 +1,6 @@
 package com.gngsn.twentythree.day2.components
 
-class Cube(
+data class Cube(
     val id: Int,
     val red: List<Int>,
     val green: List<Int>,
@@ -8,4 +8,7 @@ class Cube(
 ) {
     fun canBeConsidered(red: Int, green: Int, blue: Int) =
         this.red.max() <= red && this.green.max() <= green && this.blue.max() <= blue
+
+    fun multiplyMinimums() =
+        this.red.max() * this.green.max() * this.blue.max()
 }
