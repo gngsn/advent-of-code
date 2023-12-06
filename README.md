@@ -15,9 +15,10 @@
 
 ## 2023
 
-| day                                                                                                                                    | done | language | note      |
-|----------------------------------------------------------------------------------------------------------------------------------------|------|----------|-----------|
-| <a href="https://github.com/gngsn/advent-of-code/tree/master/2023/src/main/kotlin/com/gngsn/twentythree/day1" target="_blank">day1</a> | ✔️   | kotlin   | Trebuchet |
+| day                                                                                                                                    | done | language | note           |
+|----------------------------------------------------------------------------------------------------------------------------------------|------|----------|----------------|
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2023/src/main/kotlin/com/gngsn/twentythree/day1" target="_blank">day1</a> | ✔️   | kotlin   | Trebuchet      |
+| <a href="https://github.com/gngsn/advent-of-code/tree/master/2023/src/main/kotlin/com/gngsn/twentythree/day2" target="_blank">day2</a> | ✔️   | kotlin   | Cube Conundrum |
 
 <br/>
 
