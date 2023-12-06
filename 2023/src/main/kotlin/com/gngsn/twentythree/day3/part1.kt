@@ -1,21 +1,17 @@
 package com.gngsn.twentythree.day3
 
+import com.gngsn.twentythree.day3.components.Point
 import com.gngsn.twentythree.readFile
 
-data class Pair(
-    val y: Int,
-    val x: Int,
-)
-
-val points: List<Pair> = listOf(
-    Pair(-1, -1),
-    Pair(-1, 0),
-    Pair(-1, 1),
-    Pair(1, 1),
-    Pair(1, 0),
-    Pair(1, -1),
-    Pair(0, -1),
-    Pair(0, 1),
+val points: List<Point> = listOf(
+    Point(-1, -1),
+    Point(-1, 0),
+    Point(-1, 1),
+    Point(1, 1),
+    Point(1, 0),
+    Point(1, -1),
+    Point(0, -1),
+    Point(0, 1),
 )
 
 fun main() {
@@ -61,6 +57,6 @@ fun main() {
 }
 
 
-fun boundary(square: Array<BooleanArray>, y: Int, x: Int): Boolean {
+private fun boundary(square: Array<BooleanArray>, y: Int, x: Int): Boolean {
     return y >= 0 && y < square.size && x >= 0 && x < square[y].size && square[y][x]
 }
